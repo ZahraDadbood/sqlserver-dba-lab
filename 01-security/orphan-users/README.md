@@ -31,6 +31,8 @@ After completing this lab, you will be able to:
 - Repair orphan users safely
 - Apply SQL Server security best practices
 
+
+
 ## 📚 Requirements
 
 - Microsoft SQL Server 2016 or later
@@ -39,3 +41,10 @@ After completing this lab, you will be able to:
 ## 📝 Notes
 
 The scripts in this lab are intended for learning and demonstration purposes. Always validate and test scripts before using them in production environments.
+
+
+## 📌 Important Note
+
+This lab uses `sp_MSforeachdb` for demonstration purposes because it provides a simple way to scan multiple databases.
+
+Since `sp_MSforeachdb` is an undocumented system stored procedure, it is generally **not recommended for production environments**. In production, a more reliable approach based on `sys.databases` should be used.
